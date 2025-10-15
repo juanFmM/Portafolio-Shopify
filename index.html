@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Francisco Marte - Shopify Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">JFM</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition">Inicio</a>
+                    <a href="#sobre-mi" class="text-gray-600 hover:text-blue-600 transition">Sobre Mí</a>
+                    <a href="#habilidades" class="text-gray-600 hover:text-blue-600 transition">Habilidades</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition">Portfolio</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+                    Juan Francisco <span class="text-blue-600">Marte</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                    Shopify Developer & Frontend Specialist
+                </p>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-10">
+                    4 años creando experiencias e-commerce que convierten y soluciones web escalables
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#portfolio" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition shadow-lg">
+                        Ver Mi Trabajo
+                    </a>
+                    <a href="#contacto" class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
+                        Contáctame
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Sobre Mí</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Soy un desarrollador full-stack con 4 años de experiencia especializado en crear soluciones e-commerce y aplicaciones web empresariales.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Actualmente cursando los últimos semestres de Ingeniería en Software en UNICARIBE, combino conocimientos académicos con experiencia práctica en proyectos reales.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+                            <span class="text-gray-700">República Dominicana</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>
+                            <span class="text-gray-700">Ingeniería en Software - UNICARIBE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-language text-blue-600 mr-3"></i>
+                            <span class="text-gray-700">Inglés Profesional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Mi Experiencia Incluye:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Desarrollo de módulos para ERP (SAP B1, Odoo)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Creación de tiendas Shopify personalizadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Desarrollo frontend con HTML5, CSS3, JavaScript</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Bases de datos SQL Server, SQLite</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Habilidades Técnicas</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Shopify Skills -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-shopify text-2xl text-green-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Shopify Development</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Liquid Templating</li>
+                        <li>• Custom Sections</li>
+                        <li>• Theme Development</li>
+                        <li>• App Integration</li>
+                        <li>• Store Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Frontend</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• HTML5 / CSS3</li>
+                        <li>• JavaScript ES6+</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Responsive Design</li>
+                        <li>• Figma to Code</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Backend & Más</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• PHP / Laravel</li>
+                        <li>• C# / .NET</li>
+                        <li>• Python</li>
+                        <li>• SQL Server</li>
+                        <li>• Xamarin / MAUI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Mi Portfolio</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Proyectos recientes donde he aplicado mis habilidades en desarrollo Shopify y frontend
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 - Placeholder -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                        <span class="text-white text-lg font-semibold">Proyecto Shopify #1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda de Electrónicos</h3>
+                        <p class="text-gray-600 mb-4">Tienda especializada con filtros avanzados y sistema de comparación de productos.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">API Rest</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
+                            Ver Detalles →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Placeholder -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+                        <span class="text-white text-lg font-semibold">Proyecto Shopify #2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda de Moda</h3>
+                        <p class="text-gray-600 mb-4">E-commerce de moda con lookbook interactivo y size guide personalizado.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">AJAX</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
+                            Ver Detalles →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - Placeholder -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
+                        <span class="text-white text-lg font-semibold">Proyecto Shopify #3</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda B2B</h3>
+                        <p class="text-gray-600 mb-4">Solución empresarial con precios por volumen y portal para clientes mayoristas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
+                            Ver Detalles →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">
+                    ⚡ <strong>Links de proyectos reales serán agregados próximamente</strong>
+                </p>
+                <a href="#contacto" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+                    Solicitar Portfolio Completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Trabajemos Juntos</h2>
+            <p class="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
+                ¿Tienes un proyecto en mente? Contáctame y hablemos sobre cómo puedo ayudarte a hacerlo realidad.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-400 mt-1 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-300">tu-email@dominio.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-400 mt-1 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Teléfono</p>
+                                <p class="text-gray-300">+1 (809) XXX-XXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Ubicación</p>
+                                <p class="text-gray-300">República Dominicana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Sígueme</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-blue-600 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-blue-400 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 p-3 rounded-full hover:bg-gray-800 transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Nombre Completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition w-full">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Juan Francisco Marte. Todos los derechos reservados.</p>
+            <p class="text-gray-400 mt-2">Desarrollado con ❤️ usando HTML5, CSS3 y JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para el menú móvil -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            // Aquí puedes agregar la funcionalidad del menú móvil
+            alert('Menú móvil - Puedes implementar un dropdown aquí');
+        });
+    </script>
+</body>
+</html>
