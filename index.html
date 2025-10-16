@@ -13,6 +13,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -180,71 +181,107 @@
             </p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyecto 1 - Placeholder -->
+                <!-- Proyecto 1: Naturewell Beauty -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-r from-pink-400 to-purple-600 flex items-center justify-center relative">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-2xl font-bold mb-2">Naturewell Beauty</h3>
+                            <p class="text-sm opacity-90">Tienda de belleza y cuidado de uñas</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Live
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Naturewell Beauty</h3>
+                        <p class="text-gray-600 mb-4">Tienda especializada en productos de belleza y cuidado de uñas, con diseño elegante y experiencia de usuario optimizada.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Shopify</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Liquid</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="https://naturewellbeauty.com" target="_blank" 
+                               class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition">
+                                Ver Sitio Live
+                            </a>
+                            <button onclick="showProjectDetails('naturewell')" 
+                                    class="block w-full border border-blue-600 text-blue-600 text-center py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">
+                                Ver Detalles Técnicos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Valgenne -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-r from-teal-400 to-blue-600 flex items-center justify-center relative">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-2xl font-bold mb-2">Valgenne</h3>
+                            <p class="text-sm opacity-90">E-commerce de belleza y cuidado personal</p>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Live
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Valgenne</h3>
+                        <p class="text-gray-600 mb-4">Tienda online de productos de belleza con enfoque en experiencia móvil y optimización de conversiones.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Shopify</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Liquid</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Responsive</span>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="https://valgenne.com" target="_blank" 
+                               class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition">
+                                Ver Sitio Live
+                            </a>
+                            <button onclick="showProjectDetails('valgenne')" 
+                                    class="block w-full border border-blue-600 text-blue-600 text-center py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">
+                                Ver Detalles Técnicos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: TechGadget (Placeholder) -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
                     <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
-                        <span class="text-white text-lg font-semibold">Proyecto Shopify #1</span>
+                        <span class="text-white text-lg font-semibold">TechGadget Store</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda de Electrónicos</h3>
-                        <p class="text-gray-600 mb-4">Tienda especializada con filtros avanzados y sistema de comparación de productos.</p>
+                        <p class="text-gray-600 mb-4">Próximamente - Tienda especializada con filtros avanzados y sistema de comparación de productos.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
                             <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
                             <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">API Rest</span>
                         </div>
-                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
-                            Ver Detalles →
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2 - Placeholder -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-                    <div class="h-48 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
-                        <span class="text-white text-lg font-semibold">Proyecto Shopify #2</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda de Moda</h3>
-                        <p class="text-gray-600 mb-4">E-commerce de moda con lookbook interactivo y size guide personalizado.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
-                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">CSS3</span>
-                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">AJAX</span>
-                        </div>
-                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
-                            Ver Detalles →
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 - Placeholder -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-                    <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
-                        <span class="text-white text-lg font-semibold">Proyecto Shopify #3</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Tienda B2B</h3>
-                        <p class="text-gray-600 mb-4">Solución empresarial con precios por volumen y portal para clientes mayoristas.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Liquid</span>
-                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PHP</span>
-                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">MySQL</span>
-                        </div>
-                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition">
-                            Ver Detalles →
+                        <button class="w-full bg-gray-400 text-white py-2 rounded-lg cursor-not-allowed" disabled>
+                            En Desarrollo
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <p class="text-gray-600 mb-4">
-                    ⚡ <strong>Links de proyectos reales serán agregados próximamente</strong>
-                </p>
-                <a href="#contacto" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
-                    Solicitar Portfolio Completo
-                </a>
+            <!-- Modal para detalles técnicos -->
+            <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 id="modalTitle" class="text-2xl font-bold text-gray-800"></h3>
+                            <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 text-2xl">
+                                &times;
+                            </button>
+                        </div>
+                        <div id="modalContent" class="space-y-4">
+                            <!-- El contenido se llena dinámicamente -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -301,18 +338,18 @@
                 </div>
 
                 <div>
-                    <form class="space-y-6">
+                    <form class="space-y-6" id="contactForm">
                         <div>
                             <label for="name" class="block text-sm font-medium mb-2">Nombre Completo</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white">
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white" required>
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white"></textarea>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white" required></textarea>
                         </div>
                         <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition w-full">
                             Enviar Mensaje
@@ -331,11 +368,161 @@
         </div>
     </footer>
 
-    <!-- JavaScript para el menú móvil -->
+    <!-- JavaScript -->
     <script>
+        // Detalles técnicos de los proyectos
+        const projectDetails = {
+            'naturewell': {
+                title: 'Naturewell Beauty - Detalles Técnicos',
+                content: `
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">📋 Descripción del Proyecto</h4>
+                            <p class="text-gray-600">Tienda Shopify para empresa de belleza especializada en cuidado de uñas y productos naturales.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">🛠️ Tecnologías Implementadas</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Shopify Theme Development</li>
+                                <li>Liquid Templating</li>
+                                <li>Custom CSS con diseño responsive</li>
+                                <li>JavaScript para interactividad</li>
+                                <li>Optimización de performance</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">🎯 Características Destacadas</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Diseño mobile-first</li>
+                                <li>Sistema de reseñas de productos</li>
+                                <li>Integración con apps de marketing</li>
+                                <li>Optimización para SEO</li>
+                                <li>Páginas de colección personalizadas</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">📈 Resultados</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Tienda completamente funcional y optimizada</li>
+                                <li>Experiencia de usuario mejorada</li>
+                                <li>Base para escalamiento del negocio</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            'valgenne': {
+                title: 'Valgenne - Detalles Técnicos',
+                content: `
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">📋 Descripción del Proyecto</h4>
+                            <p class="text-gray-600">E-commerce desarrollado en Shopify para marca de belleza y cuidado personal.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">🛠️ Tecnologías Implementadas</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Shopify Plus (según requerimientos)</li>
+                                <li>Liquid templates personalizados</li>
+                                <li>HTML5 semántico</li>
+                                <li>CSS3 avanzado con animaciones</li>
+                                <li>JavaScript ES6+</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">🎯 Características Destacadas</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Arquitectura responsive</li>
+                                <li>Sistema de inventario integrado</li>
+                                <li>Checkout optimizado</li>
+                                <li>Integración con pasarelas de pago</li>
+                                <li>Sistema de tracking de órdenes</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">📈 Resultados</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Plataforma estable y escalable</li>
+                                <li>Mejora en tasa de conversión</li>
+                                <li>Experiencia de compra optimizada</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function showProjectDetails(projectId) {
+            const modal = document.getElementById('projectModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            if (projectDetails[projectId]) {
+                title.textContent = projectDetails[projectId].title;
+                content.innerHTML = projectDetails[projectId].content;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Manejo del formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aquí puedes agregar la lógica para enviar el formulario
+            // Por ahora, solo mostraremos una alerta
+            alert('¡Gracias por tu mensaje! Te contactaré pronto.');
+            this.reset();
+        });
+
+        // Menú móvil
         document.getElementById('menu-btn').addEventListener('click', function() {
-            // Aquí puedes agregar la funcionalidad del menú móvil
-            alert('Menú móvil - Puedes implementar un dropdown aquí');
+            alert('Menú móvil - En una implementación completa, aquí se desplegaría un menú responsive');
+        });
+
+        // Smooth scrolling para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
 </body>
